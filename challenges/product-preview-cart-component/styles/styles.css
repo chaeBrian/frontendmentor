@@ -47,7 +47,7 @@ body{
         line-height: 0.970;
         color: hsl(212, 21%, 14%);
     }
-    ._cardCtr__deetsCtr h3{
+    ._deetsCtr-span{
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         font-weight: lighter;
@@ -70,12 +70,12 @@ body{
         padding-top: 1.6rem;
         margin-bottom: auto;
     }
-    ._deetsCtr-priceCtr span:first-of-type{
+    ._priceCtr-actualPrice{
         font-family: 'Fraunces', serif;
         font-size: 2em; 
         color: hsl(158, 36%, 37%);
     }
-    ._deetsCtr-priceCtr span:last-of-type{
+    ._priceCtr-oldPrice{
         font-family: 'Montserrat', sans-serif;
         font-size: 0.875em;
         text-decoration: line-through;
@@ -145,7 +145,7 @@ body{
         line-height: 0.970;
         padding: 4vw 0;
     }
-    ._cardCtr__deetsCtr h3{
+    ._deetsCtr-span{
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         color: hsl(228, 12%, 48%);
@@ -166,12 +166,12 @@ body{
         align-items: center;
         padding: 1.2rem 0;
     }
-    ._deetsCtr-priceCtr span:first-of-type{
+    ._priceCtr-actualPrice{
         font-size: 8.7vw;
         font-family: 'Fraunces', serif;
         color: hsl(158, 36%, 37%);
     }
-    ._deetsCtr-priceCtr span:last-of-type{
+    ._priceCtr-oldPrice{
         font-family: 'Montserrat', sans-serif;
         text-decoration: line-through;
         font-size: 3.5vw;
