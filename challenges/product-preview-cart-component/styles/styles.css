@@ -70,12 +70,12 @@ body{
         padding-top: 1.6rem;
         margin-bottom: auto;
     }
-    ._deetsCtr-priceCtr p:first-of-type{
+    ._deetsCtr-priceCtr span:first-of-type{
         font-family: 'Fraunces', serif;
         font-size: 2em; 
         color: hsl(158, 36%, 37%);
     }
-    ._deetsCtr-priceCtr p:last-of-type{
+    ._deetsCtr-priceCtr span:last-of-type{
         font-family: 'Montserrat', sans-serif;
         font-size: 0.875em;
         text-decoration: line-through;
@@ -98,7 +98,7 @@ body{
         background-color: hsl(157, 40%, 18%);
         transition: .5s ease;
     }
-    ._deetsCtr-bttn p{
+    ._deetsCtr-bttn span{
         font-size: 14px;
         color: hsl(0, 0%, 100%);
     }
@@ -166,12 +166,12 @@ body{
         align-items: center;
         padding: 1.2rem 0;
     }
-    ._deetsCtr-priceCtr p:first-of-type{
+    ._deetsCtr-priceCtr span:first-of-type{
         font-size: 8.7vw;
         font-family: 'Fraunces', serif;
         color: hsl(158, 36%, 37%);
     }
-    ._deetsCtr-priceCtr p:last-of-type{
+    ._deetsCtr-priceCtr span:last-of-type{
         font-family: 'Montserrat', sans-serif;
         text-decoration: line-through;
         font-size: 3.5vw;
@@ -194,7 +194,7 @@ body{
         background-color: hsl(157, 40%, 18%);
         transition: .5s ease;
     }
-    ._deetsCtr-bttn p{
+    ._deetsCtr-bttn span{
         color: hsl(0, 0%, 100%);
         font-size: 3.5vw;
     }
