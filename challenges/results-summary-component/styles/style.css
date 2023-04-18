@@ -1,9 +1,13 @@
 :root{
     /*Primary*/
     --light-red: hsl(0, 100%, 67%);
+    --light-red-mod: hsla(0, 100%, 67%, 0.050);
     --orange-yellow: hsl(39, 100%, 56%);
+    --orange-yellow0-mod: hsla(39, 100%, 56%, 0.050);
     --green-teal: hsl(166, 100%, 37%);
+    --green-teal-mod: hsla(166, 100%, 37%, 0.050);
     --cobalt-blue: hsl(234, 85%, 45%);
+    --cobalt-blue-mod: hsla(234, 85%, 45%, 0.050);
 
     /*Gradients*/
     /* background */
@@ -76,9 +80,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 15px .5px var(--light-lavender);
+    box-shadow: 3px 10px 25px -9px var(--light-lavender);
     border-radius: 1rem;
-    border: .5px solid hotpink;
 }
 .main__sect{
     display: flex;
@@ -91,8 +94,8 @@ body{
     align-items: center;
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     border-radius: 1rem;
-    width: 13.8rem;
-    padding: 1.5rem 1.8rem;
+    width: 14.2rem;
+    padding: 1.5rem 2rem;
 }
 .main__sect--div__p{
     color: var(--light-lavender);
@@ -120,6 +123,8 @@ body{
 .main__sect--div h1{
     color: var(--white);
     font-size: large;
+    font-weight: bold;
+    letter-spacing: .6px;
 }
 .main__sect--div__p-mod{
     color: var(--light-lavender);
@@ -131,8 +136,8 @@ body{
 .main__sect--div-mod{
     display: flex;
     flex-direction: column;
-    width: 13.8rem;
-    padding: 1.5rem 1.6rem;
+    width: 14.1rem;
+    padding: 1.5rem 1.5rem;
 }
 .main__sect--div-mod picture{
     width: .8rem;
@@ -149,15 +154,31 @@ body{
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: .5rem;
+    padding: .5rem 0;
 }
 .main__sect--div-mod ul li{
     display: flex;
     flex-direction: row;
+    padding: .4rem .5rem;
+    margin: .6rem 0;
+    border-radius: .3rem;
+}
+.main__sect--div-mod ul li:nth-child(1){
+    background-color: var(--light-red-mod);
+}
+.main__sect--div-mod ul li:nth-child(2){
+    background-color: var(--orange-yellow0-mod);
+}
+.main__sect--div-mod ul li:nth-child(3){
+    background-color: var(--green-teal-mod);
+}
+.main__sect--div-mod ul li:nth-child(4){
+    background-color: var(--cobalt-blue-mod);
 }
 .main__sect--div-mod ul li p{
     font-size: .7rem;
-    padding: 1rem .5rem;
+    padding: 0 .5rem;
+    font-weight: bold;
 }
 .main__sect--div-mod ul li:nth-child(1) p{
     color: var(--light-red);
@@ -193,8 +214,13 @@ body{
 .main__sect--div-mod button span{
     background-color: var(--dark-gray-blue);
     width: 100%;
-    padding: .6rem 3.750rem;
+    padding: .7rem 4.2rem;
     border-radius: 1.5rem;
     color: var(--white);
-    font-size: .750rem;
+    font-size: .660rem;
+    letter-spacing: .5px;
+}
+.main__sect--div-mod button span:hover{
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    cursor: pointer;
 }

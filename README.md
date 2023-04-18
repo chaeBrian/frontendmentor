@@ -9,3 +9,5 @@ My [frontendmentori.io](frontendmentori.io) list of completed challenges.
 [Order summary card](/challenges/order-summary-component/index.html)
 
 [NFT Preview Component](/challenges/nft-preview-component/index.html)
+
+[Results Summary Component](/challenges/results-summary-component/index.html)
