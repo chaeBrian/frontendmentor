@@ -1,0 +1,200 @@
+:root{
+    /*Primary*/
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /*Gradients*/
+    /* background */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    /* circle */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --light-gray: hsl(0, 0%, 58%);
+    --light-lavender-mod: hsla(241, 100%, 89%, 0.513);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --black: rgb(15, 15, 15);
+
+    /*Typography*/
+    --typography: 'Hanken Grotesk', sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+img, picture{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+h1, p, span, a{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    font-size: 18px;
+}
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    background-color: var(--white);
+    font-family: var(--typography);
+}
+
+.main{
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 15px .5px var(--light-lavender);
+    border-radius: 1rem;
+    border: .5px solid hotpink;
+}
+.main__sect{
+    display: flex;
+    flex-direction: row;
+}
+.main__sect--div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 1rem;
+    width: 13.8rem;
+    padding: 1.5rem 1.8rem;
+}
+.main__sect--div__p{
+    color: var(--light-lavender);
+    font-size: .9rem;
+}
+.main__sect--div__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:  linear-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
+    padding: 1.8rem 2.3rem;
+    margin: 1.3rem 0;
+}
+.main__sect--div__div p:first-child{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.main__sect--div__div p:last-child{
+    color: var(--light-lavender-mod);
+    font-size: .6rem;
+}
+.main__sect--div h1{
+    color: var(--white);
+    font-size: large;
+}
+.main__sect--div__p-mod{
+    color: var(--light-lavender);
+    font-size: .7rem;
+    font-weight: 100;
+    text-align: center;
+    margin: .633rem 0;
+}
+.main__sect--div-mod{
+    display: flex;
+    flex-direction: column;
+    width: 13.8rem;
+    padding: 1.5rem 1.6rem;
+}
+.main__sect--div-mod picture{
+    width: .8rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+.main__sect--div-mod h1{
+    text-align: start;
+    font-weight: 700;
+    color: var(--black);
+}
+.main__sect--div-mod ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: .5rem;
+}
+.main__sect--div-mod ul li{
+    display: flex;
+    flex-direction: row;
+}
+.main__sect--div-mod ul li p{
+    font-size: .7rem;
+    padding: 1rem .5rem;
+}
+.main__sect--div-mod ul li:nth-child(1) p{
+    color: var(--light-red);
+}
+.main__sect--div-mod ul li:nth-child(2) p{
+    color: var(--orange-yellow);
+}
+.main__sect--div-mod ul li:nth-child(3) p{
+    color: var(--green-teal);
+}
+.main__sect--div-mod ul li:nth-child(4) p{
+    color: var(--cobalt-blue);
+}
+.main__sect--div-mod ul li div{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+    font-size: .7rem;
+}
+.main__sect--div-mod ul li div span:first-child{
+    color: var(--black);
+    font-weight: bold;
+}
+.main__sect--div-mod ul li div span:last-child{
+    color: var(--light-gray);
+    font-weight: bold;
+}
+.main__sect--div-mod button{
+    margin: auto;
+    align-items: center;
+}
+.main__sect--div-mod button span{
+    background-color: var(--dark-gray-blue);
+    width: 100%;
+    padding: .6rem 3.750rem;
+    border-radius: 1.5rem;
+    color: var(--white);
+    font-size: .750rem;
+}
