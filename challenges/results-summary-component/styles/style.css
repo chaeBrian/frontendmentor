@@ -79,7 +79,7 @@ body{
 .main{
     background-color: var(--white);
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 15px 40px 40px -10px var(--light-lavender-mod);
