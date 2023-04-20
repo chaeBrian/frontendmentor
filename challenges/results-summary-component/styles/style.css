@@ -223,3 +223,76 @@ body{
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     cursor: pointer;
 }
+
+@media screen and (max-width: 375px) {
+    body{
+        width: 100vw;
+    }
+    .main{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+        box-shadow: none;
+        border-radius: none;
+        width: 100vw;
+        height: 100vh;
+        min-width: 375px;
+    }
+    .main__sect{
+        flex-direction: column;
+        width: 100%;
+    }
+    .main__sect--div{
+        border-radius: 0 0 2rem 2rem;
+        width: 100%;
+        padding: 1.8rem 3.4rem;
+    }
+    .main__sect--div__h1{
+        font-size: 16.3px;
+    }
+    .main__sect--div__div{
+        width: 8.8rem;
+        height: 8.8rem;
+        margin: 1.5rem 0;
+    }
+    .main__sect--div__div p:first-child{
+        font-size: 50.6px;
+    }
+    .main__sect--div p:last-child{
+        font-size: 14px;
+    }
+    .main__sect--div h2{
+        font-size: 22px;
+    }
+    .main__sect--div__p-mod{
+        font-size: 1rem;
+    }
+    .main__sect--div-mod{
+        width: 100%;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    .main__sect--div-mod h1{
+        font-size: 18px;
+    }
+    .main__sect--div-mod ul{
+    margin: 1rem 0;
+    }
+    .main__sect--div-mod ul li{
+        margin: .600rem 0;
+    }
+    .main__sect--div-mod ul li picture{
+        width: 17px;
+    }
+    .main__sect--div-mod ul li p{
+        font-size: 15px;
+    }
+    .main__sect--div-mod ul li div{
+        font-size: 15px;
+    }
+    .main__sect--div-mod button{
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
