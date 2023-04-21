@@ -225,9 +225,6 @@ body{
 }
 
 @media screen and (max-width: 375px) {
-    body{
-        width: 100vw;
-    }
     .main{
         position: relative;
         top: auto;
@@ -235,8 +232,6 @@ body{
         transform: translate(0, 0);
         box-shadow: none;
         border-radius: none;
-        width: 100vw;
-        height: 100vh;
         min-width: 375px;
     }
     .main__sect{
