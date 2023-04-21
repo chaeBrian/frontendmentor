@@ -69,224 +69,226 @@ p{
     font-size: 18px;
 }
 body{
-    min-height: 100vh;
-    font-size: 100%;
+    position: relative;
+    height: 100vh;
+    min-width: 750px;
     background-color: var(--white);
     font-family: var(--typography);
-    background-color: var(--white);
+    font-size: 100%;
 }
 
 .main{
+    display: flex;
+    flex-direction: row;
+    width: 46.5rem;
     background-color: var(--white);
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 15px 40px 40px -10px var(--light-lavender-mod);
     border-radius: 1.5rem;
 }
-.main__sect{
-    display: flex;
-    flex-direction: row;
-}
-.main__sect--div{
+.main__div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 49%;
+    padding: 2.4rem 3.2rem;
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     border-radius: 2rem;
-    width: 23rem;
-    padding: 2.4rem 3.2rem;
 }
-.main__sect--div__h1{
-    color: var(--light-lavender);
+.main__div__h1{
     font-size: 23.2px;
     font-weight: 700;
+    color: var(--light-lavender);
 }
-.main__sect--div__div{
+.main__div__div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background:  linear-gradient(var(--violet-blue), var(--persian-blue));
-    border-radius: 50%;
     width: 12.8rem;
     height: 12.8rem;
     margin: 2rem 0;
+    background:  linear-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
 }
-.main__sect--div__div p:first-child{
+.main__div__div p:first-child{
     color: var(--white);
     font-size: 4.350rem;
     font-weight: 800;
 }
-.main__sect--div__div p:last-child{
-    color: var(--light-lavender-mod);
+.main__div__div p:last-child{
     font-size: 1.080rem;
+    color: var(--light-lavender-mod);
 }
-.main__sect--div h2{
-    color: var(--white);
+.main__div h2{
     font-size: 32px;
     font-weight: 700;
     letter-spacing: .6px;
+    color: var(--white);
 }
-.main__sect--div__p-mod{
-    color: var(--light-lavender);
+.main__div__p-mod{
     font-size: 18px;
     text-align: center;
     margin: 1rem 0;
+    color: var(--light-lavender);
 }
-.main__sect--div-mod{
+.main__div-mod{
     display: flex;
     flex-direction: column;
-    width: 23.5rem;
+    width: 51%;
     padding: 2.4rem;
 }
-.main__sect--div-mod h1{
-    text-align: start;
+.main__div-mod h1{
     font-weight: 700;
     font-size: 23.2px;
+    text-align: start;
     color: var(--dark-gray-blue);
 }
-.main__sect--div-mod ul{
+.main__div-mod ul{
     display: flex;
     flex-direction: column;
-    list-style: none;
     margin: 1rem 0 2rem 0;
+    list-style: none;
 }
-.main__sect--div-mod ul li{
+.main__div-mod ul li{
     display: flex;
     flex-direction: row;
     padding: .9rem 1rem;
     margin: .730rem 0;
     border-radius: .6rem;
 }
-.main__sect--div-mod ul li picture{
+.main__div-mod ul li picture{
     width: 20px;
     justify-content: center;
     align-items: center;
     margin: auto 0;
 }
-.main__sect--div-mod ul li:nth-child(1){
+.main__div-mod ul li:nth-child(1){
     background-color: var(--light-red-mod);
 }
-.main__sect--div-mod ul li:nth-child(2){
+.main__div-mod ul li:nth-child(2){
     background-color: var(--orange-yellow0-mod);
 }
-.main__sect--div-mod ul li:nth-child(3){
+.main__div-mod ul li:nth-child(3){
     background-color: var(--green-teal-mod);
 }
-.main__sect--div-mod ul li:nth-child(4){
+.main__div-mod ul li:nth-child(4){
     background-color: var(--cobalt-blue-mod);
 }
-.main__sect--div-mod ul li p{
+.main__div-mod ul li p{
     font-size: 18px;
-    padding: 0 .5rem;
     font-weight: bold;
+    padding: 0 .5rem;
 }
-.main__sect--div-mod ul li:nth-child(1) p{
+.main__div-mod ul li:nth-child(1) p{
     color: var(--light-red);
 }
-.main__sect--div-mod ul li:nth-child(2) p{
+.main__div-mod ul li:nth-child(2) p{
     color: var(--orange-yellow);
 }
-.main__sect--div-mod ul li:nth-child(3) p{
+.main__div-mod ul li:nth-child(3) p{
     color: var(--green-teal);
 }
-.main__sect--div-mod ul li:nth-child(4) p{
+.main__div-mod ul li:nth-child(4) p{
     color: var(--cobalt-blue);
 }
-.main__sect--div-mod ul li div{
+.main__div-mod ul li div{
     display: flex;
     flex-direction: row;
-    margin-left: auto;
     align-items: center;
+    margin-left: auto;
     font-size: 18px;
 }
-.main__sect--div-mod ul li div span:first-child{
+.main__div-mod ul li div span:first-child{
+    font-weight: bold;
     color: var(--dark-gray-blue);
-    font-weight: bold;
 }
-.main__sect--div-mod ul li div span:last-child{
+.main__div-mod ul li div span:last-child{
+    font-weight: bold;
     color: var(--light-gray);
-    font-weight: bold;
 }
-.main__sect--div-mod button{
-    background-color: var(--dark-gray-blue);
+.main__div-mod button{
     width: 100%;
     padding: 1.1rem 4.2rem;
-    border-radius: 2rem;
-    color: var(--white);
     font-size: 18px;
+    color: var(--white);
+    background-color: var(--dark-gray-blue);
+    border-radius: 2rem;
 }
-.main__sect--div-mod button:hover{
+.main__div-mod button:hover{
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     cursor: pointer;
 }
 
 @media screen and (max-width: 375px) {
+    body{
+        min-width: auto;
+    }
     .main{
         position: relative;
+        flex-direction: column;
+        width: 100%;
         top: auto;
         left: auto;
         transform: translate(0, 0);
+        min-width: 375px;
+        margin: 0;
         box-shadow: none;
         border-radius: none;
-        min-width: 375px;
     }
-    .main__sect{
-        flex-direction: column;
-        width: 100%;
-    }
-    .main__sect--div{
-        border-radius: 0 0 2rem 2rem;
+    .main__div{
         width: 100%;
         padding: 1.8rem 3.4rem;
+        border-radius: 0 0 2rem 2rem;
     }
-    .main__sect--div__h1{
+    .main__div__h1{
         font-size: 16.3px;
     }
-    .main__sect--div__div{
+    .main__div__div{
         width: 8.8rem;
         height: 8.8rem;
         margin: 1.5rem 0;
     }
-    .main__sect--div__div p:first-child{
+    .main__div__div p:first-child{
         font-size: 50.6px;
     }
-    .main__sect--div p:last-child{
+    .main__div p:last-child{
         font-size: 14px;
     }
-    .main__sect--div h2{
+    .main__div h2{
         font-size: 22px;
     }
-    .main__sect--div__p-mod{
+    .main__div__p-mod{
         font-size: 1rem;
     }
-    .main__sect--div-mod{
+    .main__div-mod{
         width: 100%;
         padding: 1.5rem;
         padding-bottom: 2rem;
     }
-    .main__sect--div-mod h1{
+    .main__div-mod h1{
         font-size: 18px;
     }
-    .main__sect--div-mod ul{
-    margin: 1rem 0;
+    .main__div-mod ul{
+        margin: 1rem 0;
     }
-    .main__sect--div-mod ul li{
+    .main__div-mod ul li{
         margin: .600rem 0;
     }
-    .main__sect--div-mod ul li picture{
+    .main__div-mod ul li picture{
         width: 17px;
     }
-    .main__sect--div-mod ul li p{
+    .main__div-mod ul li p{
         font-size: 15px;
     }
-    .main__sect--div-mod ul li div{
+    .main__div-mod ul li div{
         font-size: 15px;
     }
-    .main__sect--div-mod button{
+    .main__div-mod button{
         font-size: 15px;
         font-weight: 700;
     }
