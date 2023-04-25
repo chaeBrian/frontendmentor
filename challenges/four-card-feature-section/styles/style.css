@@ -40,6 +40,7 @@ svg{
     fill: currentColor;
 }
 body{
+    position: relative;
     min-height: 100vh;
     font-size: 100%;
     font-family: var(--typography);
@@ -52,18 +53,21 @@ body{
 }
 
 .main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5.9em;
-    padding-bottom: 5.9em;
     background-color: var(--light_gray);
 }
 .main__h1{
     font-weight: 200;
     font-size: 2.255em;
     color: var(--grayish_blue);
+    padding-top: 3.8em;
 }
 .main__h2{
     font-weight: 600;
