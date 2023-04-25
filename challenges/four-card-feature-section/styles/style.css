@@ -54,7 +54,7 @@ body{
 
 .main{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -66,7 +66,7 @@ body{
 .main__h1{
     font-weight: 200;
     font-size: 2.255em;
-    color: var(--grayish_blue);
+    color: var(--dark_blue);
     padding-top: 3.8em;
 }
 .main__h2{
