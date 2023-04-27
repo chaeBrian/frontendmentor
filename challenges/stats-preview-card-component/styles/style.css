@@ -1,0 +1,48 @@
+:root{
+    /*Typography*/
+    --typography_inter: 'Inter', sans-serif;
+    --typography_lexend: 'Lexend Deca', sans-serif;
+
+    /* Colors */
+    /* Primary */
+    --very_dark_blue: hsl(233, 47%, 7%); /* Main background */
+    --dark_blue: hsl(244, 38%, 16%); /* Card Background */
+    --soft_violet: hsl(277, 64%, 61%); /* accent */
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --transparent_white: hsla(0, 0%, 100%, 0.75);
+    --very_transparent_white: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+img, picture{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+h1, p, span, a{
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    position: relative;
+    height: 100vh;
+    font-size: 15px;
+}
