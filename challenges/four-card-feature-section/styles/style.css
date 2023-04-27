@@ -131,9 +131,8 @@ body{
         flex-direction: column;
     }
     .main{
-        width: 40em;
+        width: 45em;
         margin: 0 auto;
-        padding: 0 1em;
         position: relative;
         top: 0;
         left: 0;
@@ -152,6 +151,7 @@ body{
     }
     .main__p{
         max-width: 100%;
+        padding: 0 1.5em;
         font-size: 2em;
         text-align: center;
         color: var(--grayish_blue);
