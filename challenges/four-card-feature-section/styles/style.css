@@ -21,7 +21,7 @@ img , picture , video , iframe , figure{
     max-width: 100%;
     width: 100%;
     display: block;
-    object-fit: cover;        
+    object-fit: cover;
     object-position: center center;
 }
 html{
@@ -42,20 +42,20 @@ svg{
 body{
     position: relative;
     min-height: 100vh;
+    margin: 0 auto;
     font-size: 100%;
     font-family: var(--typography);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--light_gray);
-    margin: 0 auto;
 }
 
 .main{
-    width: 100%;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,53 +63,53 @@ body{
     background-color: var(--light_gray);
 }
 .main__h1{
+    padding-top: 3.8em;
     font-weight: 200;
     font-size: 2.255em;
     color: var(--dark_blue);
-    padding-top: 3.8em;
 }
 .main__h2{
+    margin: .820em 0 .840em 0;
     font-weight: 600;
     font-size: 2.255em;
     color: var(--dark_blue);
-    margin: .820em 0 .840em 0;
 }
 .main__p{
+    width: 35em;
     text-align: center;
     color: var(--grayish_blue);
-    width: 35em;
 }
 .main__sect{
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 2em 0;
+    flex-direction: row;
 }
 .main__sect picture{
     width: 4.1em;
     align-self: flex-end;
 }
 .main__sect div{
+    width: 21.7em;
     display: flex;
     flex-direction: column;
-    border-radius: .350em;
     margin: 2em 1em;
-    width: 21.7em;
     padding: 2em;
+    border-radius: .350em;
     box-shadow: 0em .50em 2em -0.80em var(--grayish_blue);
     background-color: var(--light_gray);
 }
 .main__sect div h3{
     font-size: 1.2em;
-    color: var(--dark_blue);
     font-weight: 600;
+    color: var(--dark_blue);
 }
 .main__sect div p{
-    font-weight: 200;
-    font-size: 13px;
-    color: var(--grayish_blue);
     width: 20em;
     padding: 1em 0 3.050em 0;
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--grayish_blue);
 }
 .main__sect div:first-child{
     border-top: .350em solid var(--cyan);
@@ -126,32 +126,47 @@ body{
 
 @media screen and (max-width: 750px) {
     body{
-        min-width: 750px;
         position: relative;
         display: flex;
         flex-direction: column;
     }
-    h1, h2, h3, p{
-        font-size: 25px;
-    }
     .main{
+        width: 40em;
+        margin: 0 auto;
         position: relative;
         top: 0;
         left: 0;
         transform: translate(0, 0);
     }
+    .main__h1{
+        max-width: 100%;
+        padding-top: 1.7em;
+        font-size: 3.2em;
+    }
+    .main__h2{
+        max-width: 100%;
+        font-size: 3.2em;
+        margin: 0;
+        margin-bottom: .520em;
+    }
     .main__p{
+        max-width: 100%;
+        font-size: 2em;
         text-align: center;
         color: var(--grayish_blue);
-        width: 25.1em;
     }
     .main__sect{
         flex-direction: column;
     }
+    .main__sect picture{
+        width: 7.3em;
+    }
     .main__sect div{
-        width: 38em;
+        width: 40em;
         margin-left: 0;
         margin-right: 0;
+        padding: 3.6em;
+        margin: 3.2em 1em;
     }
     .main__sect div:first-of-type{
         margin-bottom: 0;
@@ -160,12 +175,12 @@ body{
         margin-top: 0;
     }
     .main__sect section div:first-of-type{
-        margin-bottom: 2em;
+        margin-bottom: 3.2em;
     }
     .main__sect div h3{
-        font-size: 1.8em;
+        font-size: 2.7em;
     }
     .main__sect div p{
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 }
