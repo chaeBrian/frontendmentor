@@ -131,8 +131,7 @@ body{
         flex-direction: column;
     }
     .main{
-        width: 45em;
-        margin: 0 auto;
+        width: 100%;
         position: relative;
         top: 0;
         left: 0;
@@ -158,6 +157,7 @@ body{
     }
     .main__sect{
         flex-direction: column;
+        margin: 0 1em;
     }
     .main__sect picture{
         width: 7.3em;
