@@ -133,6 +133,7 @@ body{
     .main{
         width: 40em;
         margin: 0 auto;
+        padding: 0 1em;
         position: relative;
         top: 0;
         left: 0;
