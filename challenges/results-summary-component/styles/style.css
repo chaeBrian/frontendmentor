@@ -70,22 +70,22 @@ p{
 }
 body{
     position: relative;
+    width: 100%;
     height: 100vh;
-    min-width: 750px;
-    background-color: var(--white);
     font-family: var(--typography);
     font-size: 100%;
+    background-color: var(--white);
 }
 
 .main{
-    display: flex;
-    flex-direction: row;
-    width: 46.5rem;
-    background-color: var(--white);
+    width: 47.6em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
     box-shadow: 15px 40px 40px -10px var(--light-lavender-mod);
     border-radius: 1.5rem;
 }
@@ -224,26 +224,28 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
-    body{
-        min-width: auto;
-    }
+@media screen and (max-width: 750px) {
     .main{
+        width: 100%;
         position: relative;
         flex-direction: column;
-        width: 100%;
-        top: auto;
-        left: auto;
+        top: 0;
+        left: 0;
         transform: translate(0, 0);
-        min-width: 375px;
         margin: 0;
         box-shadow: none;
         border-radius: none;
+        min-width: 375px;
     }
     .main__div{
         width: 100%;
         padding: 1.8rem 3.4rem;
         border-radius: 0 0 2rem 2rem;
+    }
+    .main__div-mod{
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+        width: 100%;
     }
     .main__div__h1{
         font-size: 16.3px;
@@ -264,11 +266,6 @@ body{
     }
     .main__div__p-mod{
         font-size: 1rem;
-    }
-    .main__div-mod{
-        width: 100%;
-        padding: 1.5rem;
-        padding-bottom: 2rem;
     }
     .main__div-mod h1{
         font-size: 18px;
@@ -291,5 +288,8 @@ body{
     .main__div-mod button{
         font-size: 15px;
         font-weight: 700;
+    }
+    .main__div-mod button:hover{
+        background: linear-gradient(var(--dark-gray-blue), var(--dark-gray-blue));
     }
 }
