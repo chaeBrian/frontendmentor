@@ -126,7 +126,7 @@ body{
 @media screen and (max-width: 750px) {
     body{
         max-width: 750px;
-        padding: 0 1.5em;
+        padding: 0 .5em;
     }
     .main{
         position: relative;
