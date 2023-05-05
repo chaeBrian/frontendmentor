@@ -126,7 +126,7 @@ body{
 @media screen and (max-width: 750px) {
     body{
         max-width: 750px;
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
     .main{
         position: relative;
@@ -136,9 +136,10 @@ body{
         transform: translate(0, 0);
         margin: 2em auto 0 auto;
         border-radius: .7em;
+        min-width: 322px;
     }
     .main__sect{
-        padding: 0;
+        padding: 2em;
         align-items: center;
         text-align: center;
     }
@@ -149,10 +150,14 @@ body{
     }
     .main__p{
         width: auto;
+        margin: 2em 0;
     }
     .main__sect ul{
         flex-direction: column;
         width: auto;
+    }
+    .main__sect ul li:nth-child(2){
+        margin: 1.5em 0;
     }
     .main__pic{
         position: relative;
