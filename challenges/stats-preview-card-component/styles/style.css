@@ -150,7 +150,7 @@ body{
     }
     .main__p{
         width: auto;
-        margin: 2em 0;
+        margin: 3em 0;
     }
     .main__sect ul{
         flex-direction: column;
