@@ -49,6 +49,7 @@ body{
     background-color: var(--very_dark_blue);
 }
 .main{
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     background-color: var(--dark_blue);
@@ -120,4 +121,57 @@ body{
     border-top-right-radius: .5em;
     border-bottom-right-radius: .5em;
     background-color: var(--soft_violet_mod);
+}
+
+@media screen and (max-width: 750px) {
+    body{
+        max-width: 750px;
+        padding: 0 1em;
+    }
+    .main{
+        position: relative;
+        flex-direction: column-reverse;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 475px;
+        margin: 2em auto 0 auto;
+        border-radius: .7em;
+    }
+    .main__sect{
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .main__sect h1{
+        width: auto;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .main__p{
+        width: auto;
+    }
+    .main__sect ul{
+        flex-direction: column;
+        width: auto;
+    }
+    .main__pic{
+        position: relative;
+        width: 100%;
+    }
+    .main__pic img{
+        border-top-right-radius: .7em;
+        border-top-left-radius: .7em;
+        border-bottom-right-radius: 0;
+    }
+    .main__pic div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: .5em;
+        border-bottom-right-radius: .5em;
+        background-color: var(--soft_violet_mod);
+    }
 }
