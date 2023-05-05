@@ -13,3 +13,5 @@ My [frontendmentori.io](frontendmentori.io) list of completed challenges.
 [Results Summary Component](/challenges/results-summary-component/index.html)
 
 [Four card Feature Section](/challenges/four-card-feature-section/index.html)
+
+[Stats preview card Component](/challenges/stats-preview-card-component/index.html)
