@@ -1,0 +1,116 @@
+:root{
+    /* Colors */
+    /* primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    /* typography */
+    --typography-cursive: 'Big Shoulders Display', cursive;
+    --typography: 'Lexend Deca', sans-serif;
+}
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+img , picture , video , iframe , figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, p, a{
+    text-decoration: none;
+}
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.4em;
+    hyphens: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--very-light-gray);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+}
+.main div{
+    display: flex;
+    flex-direction: column;
+    width: 20.5em;
+    padding: 3.250em;
+}
+.main div:nth-of-type(1){
+    background-color: var(--bright-orange);
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+}
+.main div:nth-of-type(2){
+    background-color: var(--dark-cyan);
+}
+.main div:nth-of-type(3){
+    background-color: var(--very-dark-cyan);
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+}
+.main div picture{
+    display: flex;
+    width: 4em;
+}
+.main div h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    font-family: var(--typography-cursive);
+}
+.main div p{
+    color: var(--transparent-white);
+    font-family: var(--typography);
+    line-height: 1.6em;
+    hyphens: none;
+}
+.main a{
+    border: 1px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    font-family: var(--typography);
+    width: min-content;
+    white-space: nowrap;
+    padding: .5em 1em;
+    border-radius: 2em;
+}
+.main__a-1{
+    color: var(--bright-orange);
+}
+.main__a-2{
+    color: var(--dark-cyan);
+}
+.main__a-3{
+    color: var(--very-dark-cyan);
+}
