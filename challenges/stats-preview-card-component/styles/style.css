@@ -134,7 +134,7 @@ body{
         top: 0;
         left: 0;
         transform: translate(0, 0);
-        margin: 0em auto 2em auto;
+        margin: 2em auto 3em auto;
         border-radius: .7em;
         width: 322px;
     }
@@ -147,6 +147,9 @@ body{
         width: auto;
         font-size: 1.8em;
         text-align: center;
+    }
+    .main__sect h1 span{
+        color: greenyellow;
     }
     .main__p{
         width: auto;
