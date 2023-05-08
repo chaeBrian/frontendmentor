@@ -127,16 +127,20 @@ body{
     body{
         max-width: 750px;
         max-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0;
     }
     .main{
         position: relative;
         flex-direction: column-reverse;
-        top: 2%;
-        left: 0;
+        top: auto;
+        left: auto;
         transform: translate(0, 0);
-        margin: 0 auto;
         border-radius: .7em;
         width: 322px;
+        min-width: 322px;
     }
     .main__sect{
         padding: 2em;
@@ -147,9 +151,6 @@ body{
         width: auto;
         font-size: 1.8em;
         text-align: center;
-    }
-    .main__sect h1 span{
-        color: greenyellow;
     }
     .main__p{
         width: auto;
