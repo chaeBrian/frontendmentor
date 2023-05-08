@@ -134,7 +134,7 @@ body{
         top: 0;
         left: 0;
         transform: translate(0, 0);
-        margin: 2em auto 0 auto;
+        margin: 0em auto 2em auto;
         border-radius: .7em;
         width: 322px;
     }
