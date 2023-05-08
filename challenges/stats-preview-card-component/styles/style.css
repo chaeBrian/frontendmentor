@@ -126,15 +126,15 @@ body{
 @media screen and (max-width: 750px) {
     body{
         max-width: 750px;
-        padding: 0 .5em;
+        max-height: 100%;
     }
     .main{
         position: relative;
         flex-direction: column-reverse;
-        top: 0;
+        top: 2%;
         left: 0;
         transform: translate(0, 0);
-        margin: 2em auto 3em auto;
+        margin: 0 auto;
         border-radius: .7em;
         width: 322px;
     }
@@ -153,7 +153,7 @@ body{
     }
     .main__p{
         width: auto;
-        margin: 3em 0;
+        margin: 1em 0 1.5em 0;
     }
     .main__sect ul{
         flex-direction: column;
