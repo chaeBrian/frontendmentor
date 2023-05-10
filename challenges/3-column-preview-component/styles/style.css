@@ -176,7 +176,6 @@ body{
 }
 @media screen and (max-width: 459px) {
     .main div{
-        width: 60em;
         padding: 8em;
     }
     .main div:nth-of-type(1){

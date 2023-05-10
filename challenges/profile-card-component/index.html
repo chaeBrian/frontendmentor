@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="img/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Profile card Component</title>
 </head>
+
 <body>
-    <main>
+    <main class="main">
         <picture>
             <img src="images/bg-pattern-card.svg" alt="">
         </picture>
-        <picture>
+        <picture class="main__pic">
             <img src="images/image-victor.jpg" alt="">
         </picture>
         <h1>Victor Crest<span>26</span></h1>
-        <p>London</p>
-        <div>
-            <ul>
-                <li>
-                    <p>80<span>k</span></p>
-                    <p>Followers</p>
-                </li>
-                <li>
-                    <p>803<span>k</span></p>
-                    <p>Likes</p>
-                </li>
-                <li>
-                    <p>1.4<span>k</span></p>
-                    <p>Photos</p>
-                </li>
-            </ul>
-        </div>
+        <p class="main__p">London</p>
+        <ul>
+            <li>
+                <p class="main__ul-p">80<span>k</span></p>
+                <p class="main__ul-p2">Followers</p>
+            </li>
+            <li>
+                <p class="main__ul-p">803<span>k</span></p>
+                <p class="main__ul-p2">Likes</p>
+            </li>
+            <li>
+                <p class="main__ul-p">1.4<span>k</span></p>
+                <p class="main__ul-p2">Photos</p>
+            </li>
+        </ul>
     </main>
 </body>
+
 </html>
