@@ -136,7 +136,7 @@ body{
     background-color: var(--very-dark-cyan);
 }
 
-@media screen and (max-width: 759px) {
+/* @media screen and (max-width: 759px) {
     .main{
         flex-direction: column;
         margin: 1em;
@@ -173,7 +173,7 @@ body{
         color: var(--very-dark-cyan);
         background-color: var(--very-light-gray);
     }
-}
+} */
 @media screen and (max-width: 375px) {
     .main div{
         padding: 8em;
