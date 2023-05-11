@@ -12,6 +12,7 @@
     --typography: 'Lexend Deca', sans-serif;
 }
 *{
+    margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
@@ -43,8 +44,6 @@ svg{
     fill: currentColor;
 }
 body{
-    margin: 0;
-    min-width: 945px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +60,6 @@ body{
     display: flex;
     flex-direction: row;
     height: min-content;
-    margin: 0 .5em;
 }
 .main div{
     display: flex;
@@ -136,90 +134,31 @@ body{
     background-color: var(--very-dark-cyan);
 }
 
-/* @media screen and (max-width: 759px) {
+@media screen and (max-width: 960px) {
+    body{
+        background-color: black;
+    }
     .main{
         flex-direction: column;
-        margin: 1em;
+        margin: 1em 0;
     }
     .main div{
-        width: 100%;
-        padding: 2em;
-    }
-    .main div h1{
-        font-size: 3em;
-        margin-top: .8em;
-        margin-left: .5em;
-    }
-    .main div p{
-        font-size: 1.4em;
-        margin: 0;
-        line-height: 1.1em;
-        margin: 1.2em 0;
-    }
-    .main a{
-        align-self: flex-end;
-    }
-    .main__a-1:hover{
-        color: var(--bright-orange);
-        background-color: var(--very-light-gray);
-    }
-    
-    .main__a-2:hover{
-        color: var(--dark-cyan);
-        background-color: var(--very-light-gray);
-    }
-    
-    .main__a-3:hover{
-        color: var(--very-dark-cyan);
-        background-color: var(--very-light-gray);
-    }
-} */
-@media screen and (max-width: 375px) {
-    .main div{
-        padding: 8em;
+        padding: 2.5em;
     }
     .main div:nth-of-type(1){
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 1em;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        border-bottom-left-radius: 0em;
     }
     .main div:nth-of-type(3){
-        background-color: var(--very-dark-cyan);
-        border-bottom-right-radius: 1em;
-        border-bottom-left-radius: 1em;
-        border-top-right-radius: 0;
-    }
-    .main div picture{
-        width: 12em;
+        border-bottom-right-radius: .5em;
+        border-bottom-left-radius: .5em;
+        border-top-right-radius: 0em;
     }
     .main div h1{
-        font-size: 7.3em;
-        margin-left: 0;
-        margin-top: 1.3em;
+        margin-top: 1em;
     }
     .main div p{
-        font-size: 2.8em;
-        line-height: 1.6em;
-        margin: 3em 0;
-        margin-bottom: 1.7em;
+        margin: 2em 0;
     }
-    .main a{
-        align-self: normal;
-        font-size: 2.8em;
-        padding: 1.3em 2em;
-    }
-    .main__a-1:hover{
-        color: var(--bright-orange);
-        background-color: var(--very-light-gray);
-    }
-    
-    .main__a-2:hover{
-        color: var(--dark-cyan);
-        background-color: var(--very-light-gray);
-    }
-    
-    .main__a-3:hover{
-        color: var(--very-dark-cyan);
-        background-color: var(--very-light-gray);
-    }
-}   
+}
