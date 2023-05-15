@@ -42,28 +42,28 @@ blockquote:before, blockquote:after, q:before, q:after{
 	content: none;
 }
 body{
-    background-color: var(--dark-cyan);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: var(--dark-cyan);
     font-size: 18px;
     font-family: var(--typography);
     line-height: .8;
     hyphens: none;
-    margin: 1rem;
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: -22vw -31vw, 52vw 31vw;
 }
 .main{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     align-items: center;
-    background-color: var(--white);
+    margin: 1rem;
     border-radius: 1rem;
+    background-color: var(--white);
     box-shadow: 0px 10px 25px 10px hsla(185, 75%, 21%, 0.207);
 }
 .main picture:first-of-type img{
@@ -76,54 +76,54 @@ body{
     transform: translate(0, -4rem);
 }
 .main__pic img{
-    border-radius: 50%;
     border: .350rem solid white;
+    border-radius: 50%;
 }
 .main h1{
+    margin-top: -2.2rem;
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--very-dark-cyan);
     white-space: nowrap;
-    margin-top: -2.2rem;
+    color: var(--very-dark-cyan);
 }
 .main h1 span{
     margin-left: .8rem;
     color: var(--dark-grayish-blue);
 }
 .main__p{
-    color: var(--dark-grayish-blue);
     margin: 1.2rem 0 2.1rem 0;
+    color: var(--dark-grayish-blue);
 }
 .main ul{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid hsl(0, 1%, 85%);
+    width: 100%;
     padding: 0 2.1rem;
+    border-top: 1px solid hsl(0, 1%, 85%);
 }
 .main ul li{
-    width: 6rem;
-    margin: 2.1rem  0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 6rem;
+    margin: 2.1rem  0;
 }
 .main__ul-p{
     font-weight: 700;
-    color: var(--very-dark-cyan);
     font-size: 1.4rem;
+    color: var(--very-dark-cyan);
 }
 .main__ul-p span{
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 1.4rem;
+    text-transform: uppercase;
 }
 .main__ul-p2{
-    color: var(--dark-grayish-blue);
-    text-align: center;
     font-size: .7rem;
+    text-align: center;
     letter-spacing: .150rem;
     margin-top: .8rem;
+    color: var(--dark-grayish-blue);
 }
