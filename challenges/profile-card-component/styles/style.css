@@ -51,7 +51,7 @@ body{
     hyphens: none;
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: -17vw -34vw, 49vw 29vw;
+    background-position: -17vw -32vw, 50vw 25vw;
     font-size: 18px;
 }
 .main{
@@ -71,7 +71,7 @@ body{
 }
 .main__pic{
     width: 7rem;
-    transform: translate(0, -4rem);
+    transform: translate(0, -3.4rem);
 }
 .main__pic img{
     border: .350rem solid white;
@@ -79,13 +79,13 @@ body{
 }
 .main h1{
     font-size: 1.125rem;
-    margin-top: -2.2rem;
+    margin-top: -2.250rem;
     font-weight: 700;
     white-space: nowrap;
     color: var(--very-dark-cyan);
 }
 .main h1 span{
-    margin-left: .8rem;
+    margin-left: .6rem;
     color: var(--dark-grayish-blue);
 }
 .main__p{
@@ -120,9 +120,9 @@ body{
     text-transform: uppercase;
 }
 .main__ul-p2{
-    font-size: .5rem;
+    font-size: .550rem;
     text-align: center;
     letter-spacing: .150rem;
-    margin-top: .8rem;
+    margin-top: .740rem;
     color: var(--dark-grayish-blue);
 }
