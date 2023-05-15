@@ -17,3 +17,5 @@ My [frontendmentori.io](frontendmentori.io) list of completed challenges.
 [Stats preview card Component](/challenges/stats-preview-card-component/index.html)
 
 [3 Column preview Component](/challenges/3-column-preview-component/index.html)
+
+[Profile card Component](/challenges/profile-card-component/index.html)
