@@ -9,7 +9,9 @@
     --light-gray: hsl(284, 43%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
     --white: hsl(0, 0%, 100%);
+    --white-modified: rgba(255, 255, 255, 0.500);
 }
+/* Reset */
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +37,8 @@ button{
     color:inherit;
     display: block;
 }
+/* Reset */
+
 body{
     min-height: 100vh;
     font-size: 16px;
@@ -51,13 +55,22 @@ body{
     background-color: var(--white);
     border-radius: .5rem;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.034);
-}   
+}
+/* DIV*/
 div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 2.5rem;
     min-width: max-content;
+}
+#div1{
+    width: 40rem;
+}
+#div1 h1{
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 1.330rem;
 }
 #div1 span{
     color: var(--bright-yellow);
@@ -69,41 +82,7 @@ div{
     line-height: 1.450rem;
     font-size: 1rem;
 }
-#div2{
-    background-color: var(--cyan);
-}
-#div2 button{
-    background-color: var(--bright-yellow);
-    padding: .9rem 0;
-    margin-top: 1.5rem;
-    border-radius: .3rem;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.168);
-}
-#div2 p:first-of-type{
-    color: var(--light-gray);
-    margin: 1rem 0 .5rem 0;
-}
-#div2 p span{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--white);
-}
-#div3{
-    background-color: var(--cyan-modified);
-}
-#h1{
-    color: var(--cyan);
-    font-weight: 700;
-    font-size: 1.330rem;
-}
-#h2{
-    color: var(--light-gray);
-    font-size: 1rem;
-    font-weight: 700;
-}
-#h3{
-    color: var(--light-gray);
-}
+/* SECTION DIV's */
 #section{
     display: flex;
     flex-direction: row;
@@ -111,4 +90,42 @@ div{
 }
 #section div{
     width: 50%;
+}
+#div2{
+    background-color: var(--cyan);
+}
+#div2 h2{
+    color: var(--light-gray);
+    font-size: 1rem;
+    font-weight: 700;
+}
+#div2 p:first-of-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 .5rem 0;
+}
+#div2 p:first-of-type span:last-of-type{
+    font-size: 1rem;
+    margin-left: .5rem;
+    font-weight: normal;
+    color: var(--white-modified);
+}
+#div2 p span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+#div2 button{
+    background-color: var(--bright-yellow);
+    padding: .9rem 0;
+    margin-top: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.168);
+}
+#div3{
+    background-color: var(--cyan-modified);
+}
+#div3 h3{
+    color: var(--light-gray);
 }
