@@ -46,41 +46,39 @@ body{
     background-color: var(--cyan-modified-2);
 }
 #main{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
+    width: 40rem;
     background-color: var(--white);
-    border-radius: .5rem;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.034);
+    border-radius: .5rem;
 }
 /* DIV*/
 div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2.5rem;
     min-width: max-content;
-}
-#div1{
-    width: 40rem;
+    padding: 2.5rem;
 }
 #div1 h1{
-    color: var(--cyan);
-    font-weight: 700;
     font-size: 1.330rem;
+    font-weight: 700;
+    color: var(--cyan);
 }
 #div1 span{
-    color: var(--bright-yellow);
     font-weight: 700;
     margin: 1rem 0 .6rem 0;
+    color: var(--bright-yellow);
 }
 #div1 p{
-    color: var(--grayish-blue);
-    line-height: 1.450rem;
     font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--grayish-blue);
 }
 /* SECTION DIV's */
 #section{
@@ -95,9 +93,9 @@ div{
     background-color: var(--cyan);
 }
 #div2 h2{
-    color: var(--light-gray);
     font-size: 1rem;
     font-weight: 700;
+    color: var(--light-gray);
 }
 #div2 p:first-of-type{
     display: flex;
@@ -107,8 +105,8 @@ div{
 }
 #div2 p:first-of-type span:last-of-type{
     font-size: 1rem;
+    font-weight: 400;
     margin-left: .5rem;
-    font-weight: normal;
     color: var(--white-modified);
 }
 #div2 p span{
@@ -117,15 +115,67 @@ div{
     color: var(--white);
 }
 #div2 button{
-    background-color: var(--bright-yellow);
     padding: .9rem 0;
     margin-top: 2rem;
     border-radius: .3rem;
+    background-color: var(--bright-yellow);
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.168);
 }
 #div3{
     background-color: var(--cyan-modified);
 }
 #div3 h3{
+    font-size: 1rem;
+    font-weight: 700;
     color: var(--light-gray);
+}
+#div3 p{
+    font-size: .780rem;
+    line-height: 1.2rem;
+    margin-top: auto;
+    color: var(--white-modified);
+}
+@media screen and (max-width: 676px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 , h2 , h3, p ,span{
+        white-space: normal;
+    }
+    div{
+        min-width: auto;
+        padding: 1.5rem;
+    }
+    #main{
+        width: auto;
+        min-width: 18rem;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+        margin: 1rem;
+    }
+    #div1 span{
+        margin: 1.5rem 0;
+    }
+    #div1 p{
+        font-size: .9rem;
+    }
+    #section{
+        flex-direction: column;
+        width: 100%;
+    }
+    #section div{
+        width: 100%;
+    }
+    #div3{
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    #div3 p{
+        margin-top: 1rem;
+    }
 }
